@@ -1,1 +1,1 @@
-# Sistemas-Transaccionales
+# Parcial Sistemas Transaccionales
