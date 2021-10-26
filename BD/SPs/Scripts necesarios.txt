@@ -1,0 +1,14 @@
+-Crear persona
+-Consultar de persona
+-Actualizar informacion de persona
+
+-Registro de Vehiculo
+-Consulta de vehiculo junto con el propietario
+-Actualizar información de un vehiculo
+
+-Consultar comprobantes de pago por usuario o por vehiculo
+
+-Dirección del parqueadero
+-Verificar Espacio en parqueadero
+-Revisar Pago
+-Crear pago
