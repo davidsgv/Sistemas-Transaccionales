@@ -1,4 +1,5 @@
 USE [master]
+DROP DATABASE IF EXISTS Parqueadero
 GO
 /****** Object:  Database [Parqueadero]    Script Date: 10/25/2021 10:22:13 PM ******/
 CREATE DATABASE [Parqueadero]
@@ -88,9 +89,9 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Bahia](
-	[IdBahia] [int] NOT NULL,
+	[IdBahia] [int] NOT NULL IDENTITY(1,1),
 	[IdParqueadero] [int] NULL,
-	[Disponible] [varchar](50) NULL,
+	[Disponible] BIT NULL,
  CONSTRAINT [PK_Bahia] PRIMARY KEY CLUSTERED 
 (
 	[IdBahia] ASC
@@ -103,12 +104,12 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Pago](
-	[IdPago] [int] NOT NULL,
+	[IdPago] [int] NOT NULL IDENTITY(1,1),
 	[IdBahia] [int] NOT NULL,
 	[IdVehiculo] [int] NOT NULL,
-	[Tiempo] [varchar](50) NULL,
-	[Costo] [varchar](50) NULL,
-	[Fecha] [date] NOT NULL,
+	[Tiempo] INT NOT NULL,
+	[Costo] MONEY NULL,
+	[Fecha] DATETIME NOT NULL,
  CONSTRAINT [PK_Pago] PRIMARY KEY CLUSTERED 
 (
 	[IdPago] ASC
@@ -121,7 +122,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Parqueadero](
-	[IdParqueadero] [int] NOT NULL,
+	[IdParqueadero] [int] NOT NULL IDENTITY(1,1),
 	[Nombre] [varchar](50) NOT NULL,
 	[Ubicacion] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Parqueadero] PRIMARY KEY CLUSTERED 
@@ -136,7 +137,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Persona](
-	[IdPersona] [int] NOT NULL,
+	[IdPersona] [int] NOT NULL IDENTITY(1,1),
 	[Nombre] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Persona] PRIMARY KEY CLUSTERED 
 (
@@ -150,8 +151,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tarifa](
-	[IdTarifa] [int] NOT NULL,
-	[Costo] [varchar](50) NULL,
+	[IdTarifa] [int] NOT NULL IDENTITY(1,1),
+	[Costo] MONEY NULL,
 	[IdTipo] [int] NOT NULL,
  CONSTRAINT [PK_Tarifa] PRIMARY KEY CLUSTERED 
 (
@@ -165,7 +166,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[TipoVehiculo](
-	[IdTipo] [int] NOT NULL,
+	[IdTipo] [int] NOT NULL IDENTITY(1,1),
 	[Clase] [varchar](50) NOT NULL,
  CONSTRAINT [PK_TipoVehiculo] PRIMARY KEY CLUSTERED 
 (
@@ -179,7 +180,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Vehiculo](
-	[IdVehiculo] [int] NOT NULL,
+	[IdVehiculo] [int] NOT NULL IDENTITY(1,1),
 	[Marca] [nchar](10) NULL,
 	[IdPersona] [int] NOT NULL,
 	[IdTipo] [int] NOT NULL,
