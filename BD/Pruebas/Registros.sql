@@ -32,17 +32,17 @@ INSERT INTO Pago
 	VALUES (1,1,10,10000,'2021-10-25')
 
 
-SELECT * 
-FROM Persona;
-SELECT * 
-FROM TipoVehiculo;
-SELECT * 
-FROM Tarifa;
-SELECT * 
-FROM Vehiculo;
-SELECT * 
-FROM Parqueadero;
-SELECT * 
-FROM Bahia;
-SELECT * 
-FROM Pago;
+--SELECT * 
+--FROM Persona;
+--SELECT * 
+--FROM TipoVehiculo;
+--SELECT * 
+--FROM Tarifa;
+--SELECT * 
+--FROM Vehiculo;
+--SELECT * 
+--FROM Parqueadero;
+--SELECT * 
+--FROM Bahia;
+--SELECT * 
+--FROM Pago;

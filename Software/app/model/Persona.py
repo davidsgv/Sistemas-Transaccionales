@@ -1,22 +1,22 @@
-from app.model.Base import select_db
+from app.model.Base import selectDB, insertBD
 
 
 class Persona():
     @staticmethod
     def listaPersonas():
-        data = select_db("SELECT * FROM Persona")
+        data = selectDB("SELECT * FROM Persona")
 
         return recorrerResultados(data)
 
     @staticmethod
     def GetPersonaById(idPersona):
         query = "SELECT * FROM Persona WHERE IdPersona = {}".format(idPersona)
-        data = select_db(query)
+        data = selectDB(query)
         return recorrerResultados(data)
 
     @staticmethod
     def createPersona(nombre):
-        select_db("INSERT INTO Persona (Nombre) VALUES ('{}')".format(nombre))
+        insertBD("INSERT INTO Persona (Nombre) VALUES ('{}')".format(nombre))
 
 def recorrerResultados(data):
     array = []
