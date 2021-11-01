@@ -1,7 +1,9 @@
 cd ..
-cd software
+cd Software
+cd Backend
 
 SET softwareDir=%cd%
+cd ..
 cd ..
 cd venv
 cd Scripts

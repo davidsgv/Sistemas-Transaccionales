@@ -1,4 +1,5 @@
 from flask import Blueprint, jsonify, request
+from flask_cors import cross_origin
 
 #Model
 from app.model.Persona import Persona
@@ -10,6 +11,7 @@ persona = Blueprint('persona', __name__, url_prefix="/persona/")
 
 #listar todas las Personas
 @persona.route("list")
+@cross_origin()
 def getPersona():
     #se verifica si la sesion esta iniciada
     login = ManejoUsuarios.VerificarSesion()
@@ -23,6 +25,7 @@ def getPersona():
 
 #Obtener persona
 @persona.route("")
+@cross_origin()
 def getPersonaById():
     #se verifica si la sesion esta iniciada
     login = ManejoUsuarios.VerificarSesion()
@@ -42,7 +45,8 @@ def getPersonaById():
     return jsonify({"message":"invalid token"})
 
 #Crear persona
-@persona.route("create", methods=["POST"])
+@persona.route("", methods=["POST"])
+@cross_origin()
 def createPersona():
     #se verifica si la sesion esta iniciada
     login = ManejoUsuarios.VerificarSesion()

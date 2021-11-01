@@ -1,9 +1,12 @@
 from flask import Blueprint, jsonify, request
+from flask_cors import cross_origin
+
 from app.model.Usuario import ManejoUsuarios
 
 sesion = Blueprint('sesion', __name__, url_prefix="/sesion/")
 
 @sesion.route("login", methods=["POST"])
+@cross_origin()
 def login():
     try:
         correo = request.json["correo"]

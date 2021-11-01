@@ -11,5 +11,6 @@ cd venv && ^
 cd scripts && ^
 call python.exe -m pip install flask==1.1.2 && ^
 call python.exe -m pip install pyodbc && ^
-call python.exe -m pip install Flask-Sqlalchemy
+call python.exe -m pip install Flask-Sqlalchemy && ^
+call python.exe -m pip install flask_cors
 PAUSE
