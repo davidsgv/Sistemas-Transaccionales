@@ -16,7 +16,7 @@ abrir carpeta batch
 * Ejecutar archivo bat CorrerFront
 
 ##  Ver aplicacion
-Abri navegador y entrar a esta URL localhost:8081
+Abri navegador y entrar a [localhost:8081](localhost:8081)
 
 ## Integrantes
 * Leidy Dayana Avendaño Moreno.
