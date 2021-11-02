@@ -168,6 +168,7 @@ GO
 CREATE TABLE [dbo].[TipoVehiculo](
 	[IdTipo] [int] NOT NULL IDENTITY(1,1),
 	[Clase] [varchar](50) NOT NULL,
+ CONSTRAINT unique_Clase UNIQUE (Clase),
  CONSTRAINT [PK_TipoVehiculo] PRIMARY KEY CLUSTERED 
 (
 	[IdTipo] ASC
