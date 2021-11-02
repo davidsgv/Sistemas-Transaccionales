@@ -15,7 +15,8 @@ def recorrerResultados(data):
         resultados.update({"IdBahia": row["IdBahia"]})
         resultados.update({"IdVehiculo": row["IdVehiculo"]})
         resultados.update({"Tiempo": row["Tiempo"]})
-        resultados.update({"Costo": int(row["Costo"])})
+        if row["Costo"] != None:
+            resultados.update({"Costo": int(row["Costo"])})
         resultados.update({"Fecha": row["Fecha"]})
         array.append(resultados)
     return array

@@ -1,5 +1,6 @@
 from app import app
 from app.controllers.Sesion import sesion
+#from app.controllers.Index import index
 
 from app.controllers.Parqueadero import parqueadero
 from app.controllers.Bahia import bahia
@@ -13,6 +14,7 @@ from app.controllers.Vehiculo import vehiculo
 from app.controllers.GestionParqueadero import gestionParqueadero
 from app.controllers.Pago import pago
 
+#app.register_blueprint(index)
 app.register_blueprint(sesion)
 
 app.register_blueprint(parqueadero)

@@ -1,4 +1,4 @@
-CREATE PROCEDURE spConsultarParqueaderos
+CREATE OR ALTER PROCEDURE spConsultarParqueaderos
 	@idParqueadero INT = null
 AS
 BEGIN

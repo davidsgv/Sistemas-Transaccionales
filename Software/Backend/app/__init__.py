@@ -15,6 +15,8 @@ app.config.from_object(config)
 db = SQLAlchemy(app)
 
 
+
+
 #app.config['SECRET_KEY'] = 'random'
 # app.debug = True
 # toolbar = DebugToolbarExtension(app)
