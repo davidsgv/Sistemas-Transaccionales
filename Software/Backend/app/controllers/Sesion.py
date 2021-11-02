@@ -20,3 +20,5 @@ def login():
         return jsonify({"response":data,"message":"ok"})
     except:
         return jsonify({"message":"Internal error"})
+
+    return jsonify({"message":"Invalid credentials"})

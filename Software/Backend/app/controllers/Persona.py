@@ -10,7 +10,7 @@ from app.model.Usuario import ManejoUsuarios
 persona = Blueprint('persona', __name__, url_prefix="/persona/")
 
 #listar todas las Personas
-@persona.route("list")
+@persona.route("list", methods=["POST"])
 @cross_origin()
 def getPersona():
     #se verifica si la sesion esta iniciada
@@ -24,7 +24,7 @@ def getPersona():
     return jsonify({"message":"invalid token"})
 
 #Obtener persona
-@persona.route("")
+@persona.route("", methods=["POST"])
 @cross_origin()
 def getPersonaById():
     #se verifica si la sesion esta iniciada
@@ -45,7 +45,7 @@ def getPersonaById():
     return jsonify({"message":"invalid token"})
 
 #Crear persona
-@persona.route("", methods=["POST"])
+@persona.route("create", methods=["POST"])
 @cross_origin()
 def createPersona():
     #se verifica si la sesion esta iniciada
