@@ -15,7 +15,7 @@ abrir carpeta batch
 ## Abri navegador y entrar a esta URL localhost:8081
 
 
-Leidy Dayana Avendaño Moreno
-Andres Santiago Suarez Rincon
-Yeferson Andres Diaz Calle
-David Steven Gonzalez Vargas
+Leidy Dayana Avendaño Moreno.
+Andres Santiago Suarez Rincon.
+Yeferson Andres Diaz Calle.
+David Steven Gonzalez Vargas.
