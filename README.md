@@ -7,6 +7,9 @@ ejecutar todos los archivos SQL que estan en la carpeta DB menos lo que estan en
 ejecutar el siguiente comando en sql server para crear un usuario 
 * "EXEC spCrearUsuario @correo = '[nombreUsuario]', @clave = '[clave]' "
 
+
+## ejecutar aplicaciones 
+
 abrir carpeta batch
 * Ejecutar archivo bat CrearVenv
 * Ejecutar archivo bat CorrerBack
