@@ -20,5 +20,6 @@ def recorrerResultados(data):
         resultados.update({"IdBahia": row["IdBahia"]})
         resultados.update({"IdParqueadero": row["IdParqueadero"]})
         resultados.update({"Disponible": row["Disponible"]})
+        resultados.update({"IdVehiculo": row["IdVehiculo"]})
         array.append(resultados)
     return array
