@@ -16,6 +16,7 @@ def recorrerResultados(data):
     array = []
     for row in data:
         resultados = {}
+        resultados.update({"IdTipo": row["IdTipo"]})
         resultados.update({"Clase": row["Clase"]})
         array.append(resultados)
     return array

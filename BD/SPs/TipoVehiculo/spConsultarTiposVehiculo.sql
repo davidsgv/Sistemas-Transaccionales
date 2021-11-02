@@ -4,6 +4,6 @@ GO
 CREATE PROCEDURE spConsultarTiposVehiculo
 AS
 BEGIN
-	SELECT Clase
+	SELECT Clase, IdTipo
 	FROM TipoVehiculo
 END
