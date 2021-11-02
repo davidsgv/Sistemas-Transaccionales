@@ -1,5 +1,5 @@
-CREATE LOGIN transaccionales   
-    WITH PASSWORD = '340$Uuxwp7Mcxo7Khy';
+--CREATE LOGIN transaccionales   
+--    WITH PASSWORD = '340$Uuxwp7Mcxo7Khy';
 CREATE USER transaccionalesUser for login transaccionales;
 GO
 

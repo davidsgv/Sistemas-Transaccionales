@@ -107,7 +107,7 @@ CREATE TABLE [dbo].[Pago](
 	[IdPago] [int] NOT NULL IDENTITY(1,1),
 	[IdBahia] [int] NOT NULL,
 	[IdVehiculo] [int] NOT NULL,
-	[Tiempo] INT NOT NULL,
+	[Tiempo] INT NULL,
 	[Costo] MONEY NULL,
 	[Fecha] DATETIME NOT NULL,
  CONSTRAINT [PK_Pago] PRIMARY KEY CLUSTERED 

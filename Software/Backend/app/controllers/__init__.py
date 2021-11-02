@@ -9,6 +9,8 @@ from app.controllers.Tarifa import tarifa
 from app.controllers.Persona import persona
 from app.controllers.Vehiculo import vehiculo
 
+from app.controllers.GestionParqueadero import gestionParqueadero
+
 from app.controllers.Sesion import sesion
 
 app.register_blueprint(parqueadero)
@@ -19,5 +21,7 @@ app.register_blueprint(tarifa)
 
 app.register_blueprint(persona)
 app.register_blueprint(vehiculo)
+
+app.register_blueprint(gestionParqueadero)
 
 app.register_blueprint(sesion)
