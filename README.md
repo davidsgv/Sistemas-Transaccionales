@@ -3,9 +3,9 @@
 #Como ejecutar
 
 ## Servidor SQL server
-ejecutar todos los archivos SQL que estan en la carpeta DB menos lo que estan en la carpeta prueba
-ejecutar el siguiente comando en sql server para crear un usuario 
-* "EXEC spCrearUsuario @correo = '[nombreUsuario]', @clave = '[clave]' "
+* ejecutar todos los archivos SQL que estan en la carpeta DB menos lo que estan en la carpeta prueba
+* ejecutar el siguiente comando en sql server para crear un usuario 
+** "EXEC spCrearUsuario @correo = '[nombreUsuario]', @clave = '[clave]' "
 
 
 ## ejecutar aplicaciones 
