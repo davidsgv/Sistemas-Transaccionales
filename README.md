@@ -15,10 +15,11 @@ abrir carpeta batch
 * Ejecutar archivo bat CorrerBack
 * Ejecutar archivo bat CorrerFront
 
-## Abri navegador y entrar a esta URL localhost:8081
+##  Ver aplicacion
+Abri navegador y entrar a esta URL localhost:8081
 
-
-Leidy Dayana Avendaño Moreno.
-Andres Santiago Suarez Rincon.
-Yeferson Andres Diaz Calle.
-David Steven Gonzalez Vargas.
+## Integrantes
+* Leidy Dayana Avendaño Moreno.
+* Andres Santiago Suarez Rincon.
+* Yeferson Andres Diaz Calle.
+* David Steven Gonzalez Vargas.
